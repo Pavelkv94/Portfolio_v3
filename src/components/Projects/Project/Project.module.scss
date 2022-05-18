@@ -1,0 +1,105 @@
+.project {
+    max-width: 1200px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 15px rgb(144, 144, 144);
+    border-radius: 5px;
+    position: relative;
+    margin: 30px 0;
+    .photo {
+        width: 450px;
+        height: 300px;
+        background-size: cover;
+        background-position: 50%;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .description {
+        width: 550px;
+
+        p, h3 {
+            margin-left: 20px;
+        }
+    }
+
+    .controls {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .link {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            a {
+                letter-spacing: 2px;
+                background-color: transparent;
+                padding: 12px 35px;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                display: inline-block;
+                color: linear-gradient(to left, #a6c0c6, #efefef, #8b7779);
+                background-color: transparent;
+                border-radius: 30px 30px 30px 30px;
+                background-color: white;
+                box-shadow: none;
+                text-decoration: none;
+                transition: ease 0.3s;
+                z-index: 1;
+
+                span {
+                    font-size: 20px;
+                    position: relative;
+                    z-index: 2;
+                    transition: all 0.8s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 1.4em;
+                    word-wrap: break-word;
+                    background: linear-gradient(
+                        to left,
+                        #17c0e9,
+                        #c96ddd,
+                        #f45162
+                    );
+                    -webkit-background-clip: text !important;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 15px rgb(201, 201, 201);
+                }
+            }
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background: red;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}

@@ -6,10 +6,12 @@
     align-items: center;
     justify-content: center;
 
+
     div {
         width: 1200px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
         span {
             color: #ffffff;
@@ -26,7 +28,7 @@
     .skillsBock {
         display: flex;
         align-items: center;
-        justify-content: space-b;
+        justify-content: space-between;
 
         max-width: 1200px;
         flex-wrap: wrap;

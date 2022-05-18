@@ -2,6 +2,9 @@
     width: 100%;
     min-height: 100vh;
     background-color: white;
+    display: flex;
+flex-direction: column;
+    align-items: center;
 
     .title {
         width: 100%;
