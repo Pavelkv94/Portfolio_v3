@@ -2,9 +2,9 @@ import React from "react";
 import { Fade } from "react-reveal";
 import s from "./Available.module.scss";
 
-export const Available = () => {
+export const Available = ({theme}) => {
     return (
-        <div className={s.available}>
+        <div className={s.available} style={theme}>
             <div>
                 <h3>I Am Available For Work</h3>
             </div>

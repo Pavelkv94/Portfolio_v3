@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 import { Skill } from "./Skill/Skill";
+import { skills } from "./skillData";
 import s from "./Skills.module.scss";
 
-export const Skills = () => {
+export const Skills = ({ dark }) => {
+    const [theme, setTheme] = useState({ background: "white" });
+
+    useEffect(() => {
+        dark
+            ? setTheme({ background: "#11141B", transition: "1s" })
+            : setTheme({ background: "#f7f7f7", transition: "1s" });
+    }, [dark]);
+
     return (
-        <div className={s.skills}>
+        <div className={s.skills} style={theme}>
             <div className={s.line}>
                 <div>
                     <span>10+ Pet Projects</span>
@@ -16,14 +25,9 @@ export const Skills = () => {
 
             <h2>My Skills</h2>
             <Fade bottom>
-            <div className={s.skillsBock}>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-            </div>
+                <div className={s.skillsBock}>
+                    {skills.map((el,i) =>  <Skill key={i} data={el} dark={dark}/>)}
+                </div>
             </Fade>
         </div>
     );

@@ -35,12 +35,17 @@
 
             svg {
                 margin-right: 10px;
-                color: linear-gradient(
+                background: linear-gradient(
                     90deg,
                     #12c2e9 0%,
                     #c471ed 49%,
                     #f64f59 100%
                 );
+                border-radius: 5px;
+            }
+
+            h5 {
+                margin: 0;
             }
         }
 
