@@ -1,0 +1,50 @@
+.line {
+    width: 100%;
+    min-height: 150px;
+    background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+
+        span {
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
+.skills {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+
+    .skillsBock {
+        display: flex;
+        align-items: center;
+        justify-content: space-b;
+
+        max-width: 1200px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 48px;
+        line-height: 1.4em;
+        word-wrap: break-word;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #17c0e9, #c96ddd, #f45162);
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+    }
+}
