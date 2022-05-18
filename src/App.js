@@ -16,6 +16,7 @@ function App() {
             ? setTheme({ background: "#0C0F16", transition: "1s" })
             : setTheme({ background: "white", transition: "1s" });
     }, [dark]);
+    
     return (
         <div className="App">
             <div className="switch">

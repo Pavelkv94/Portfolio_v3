@@ -3,6 +3,9 @@
     min-height: 40vh;
     background-color: #f7f7f7;
 
+    @media screen and (max-width: 640px) {
+        min-height: 30vh;
+    }
     div {
         width: 100%;
         min-height: 10vh;
@@ -22,6 +25,11 @@
         background: linear-gradient(to right, #17c0e9, #c96ddd, #f45162);
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 640px) {
+            font-size: 32px;
+            text-align: center;
+        }
     }
 
     .link {

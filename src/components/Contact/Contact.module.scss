@@ -10,6 +10,10 @@
         min-height: 600px;
         display: flex;
 
+        @media screen and (max-width: 640px) {
+            flex-wrap: wrap;
+        }
+
         section {
             display: flex;
             flex-direction: column;
@@ -22,7 +26,10 @@
                 height: 500px;
                 padding: 0 40px;
 
-                a {
+                @media screen and (max-width: 640px) {
+                    width: 100%;
+                }
+                button {
                     width: 100px;
                     border: 1px solid #fff;
                     color: #fff;
@@ -40,12 +47,12 @@
                     &:hover {
                         cursor: pointer;
                     }
-
                 }
 
                 div {
                     width: 100%;
-    
+                    margin-bottom: 10px;
+
                     textarea {
                         width: 99%;
                         background-color: rgba(255, 255, 255, 0.301);
@@ -53,7 +60,7 @@
                         border: none;
                         color: white;
                         resize: none;
-    
+
                         &::placeholder {
                             color: rgba(255, 255, 255, 0.856);
                         }
@@ -66,13 +73,13 @@
                         border: none;
                         color: white;
                         background-color: rgba(255, 255, 255, 0.301);
-    
+
                         &::placeholder {
                             color: rgba(255, 255, 255, 0.856);
                         }
                     }
                     position: relative;
-    
+
                     &:after {
                         position: absolute;
                         content: "";
@@ -89,7 +96,7 @@
                         left: 0;
                         transition: all 0.5s;
                     }
-    
+
                     &:hover {
                         &:after {
                             width: 100%;
@@ -105,11 +112,45 @@
                 flex-direction: column;
                 align-items: center;
 
+                h2 {
+                    margin-top: 35px;
+                }
+                @media screen and (max-width: 640px) {
+                    width: 100%;
+                }
                 p {
                     margin-top: 100px;
+                    margin-bottom: 50px;
+
+                    @media screen and (max-width: 640px) {
+                        margin-top: 10px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                div {
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    @media screen and (max-width: 640px) {
+                        margin-bottom: 80px;
+                    }
+
+                    a {
+                        color: white;
+                        &:hover {
+                            background: linear-gradient(
+                                to left,
+                                #17c0e9,
+                                #c96ddd,
+                                #f45162
+                            );
+                            border-radius: 10px;
+                        }
+                    }
                 }
             }
-            
         }
     }
 

@@ -8,12 +8,25 @@
     border-radius: 5px;
     position: relative;
     margin: 30px 0;
+
+    @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+        margin: 30px 30px;
+        width: 100%;
+    }
+    @media screen and (max-width: 640px) {
+        margin: 30px 0px;
+    }
     .photo {
         width: 450px;
         height: 300px;
         background-size: cover;
         background-position: 50%;
         border-radius: 5px 0 0 5px;
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
     }
 
     .description {
@@ -21,6 +34,10 @@
 
         p, h3 {
             margin-left: 20px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 300px;
         }
     }
 
@@ -82,6 +99,13 @@
                     box-shadow: 0px 0px 15px rgb(201, 201, 201);
                 }
             }
+        }
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: row;
+            width: 250px;
+            height: 100px;
+            padding-left: 100px;
         }
     }
 

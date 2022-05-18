@@ -10,45 +10,56 @@
     background-image: url("../../assets/back.jpg");
     z-index: -2;
 }
-    .mainContent {
-        width: 100%;
-        min-height: 100vh;
-        background-color: rgba(0, 0, 0, 0.683);
+.mainContent {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.683);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+
+    .container {
+        width: 1200px;
+        z-index: -1;
         display: flex;
         align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: -1;
+        justify-content: space-between;
 
-        .container {
-            max-width: 1200px;
-            z-index: -1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .mainPhoto {
+            width: 300px;
+            height: 400px;
+            margin: 5px;
+            background-size: cover;
+            background-position: 50%;
+            background-image: url("../../assets/avatar.jpg");
+        }
 
-            h2 {
-                font-size: 65px;
-                font-weight: 600;
-                letter-spacing: 2px;
-                color: #fff;
-                width: 58%;
-                text-align: center;
-                line-height: 1.4em;
-                word-wrap: break-word;
-                font-family: "Poppins", sans-serif;
+        h2 {
+            font-size: 65px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #fff;
+            width: 58%;
+            line-height: 1.2em;
+            word-wrap: break-word;
+            font-family: "Poppins", sans-serif;
 
-                span {
-                    background: linear-gradient(
-                        to right,
-                        #12c2e9,
-                        #d641a7,
-                        #f64f59
-                    );
-                    -webkit-background-clip: text !important;
-                    -webkit-text-fill-color: transparent;
-                }
+            @media screen and (max-width: 640px) {
+                font-size: 48px;
+            }
+
+            span {
+                background: linear-gradient(
+                    to right,
+                    #12c2e9,
+                    #d641a7,
+                    #f64f59
+                );
+                -webkit-background-clip: text !important;
+                -webkit-text-fill-color: transparent;
             }
         }
     }
-
+}

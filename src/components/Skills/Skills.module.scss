@@ -13,6 +13,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+        @media screen and (max-width: 1200px) {
+            justify-content: space-around;
+        }
         span {
             color: #ffffff;
             font-size: 26px;
@@ -29,10 +32,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         max-width: 1200px;
         flex-wrap: wrap;
         margin: 0 auto;
+
+        @media screen and (max-width: 640px) {
+            justify-content: center;
+        }
     }
 
     h2 {

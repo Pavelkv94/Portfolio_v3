@@ -19,15 +19,9 @@ export const Projects = ({ dark }) => {
                 <h2>- Projects & Showcases -</h2>
             </div>
             {projects.map((el, i) =>
-                i % 2 === 0 ? (
-                    <Fade left key={i}>
-                        <Project data={el} dark={dark}/>
-                    </Fade>
-                ) : (
-                    <Fade right key={i}>
-                        <Project data={el} dark={dark}/>
-                    </Fade>
-                )
+              <Fade key={i}>
+              <Project data={el} dark={dark}/>
+          </Fade>
             )}
         </div>
     );
