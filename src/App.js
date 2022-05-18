@@ -3,6 +3,7 @@ import "./App.css";
 import { Available } from "./components/Available/Available";
 import { Contact } from "./components/Contact/Contact";
 import { Main } from "./components/Main/Main";
+import { Nav } from "./components/nav/Nav";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
 import CustomizedSwitches from "./components/Switch/Switch";
@@ -19,6 +20,7 @@ function App() {
     
     return (
         <div className="App">
+            <div className="nav"><Nav /></div>
             <div className="switch">
                 <CustomizedSwitches dark={dark} setDark={setDark} />
             </div>

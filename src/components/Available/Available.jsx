@@ -4,7 +4,7 @@ import s from "./Available.module.scss";
 
 export const Available = ({theme}) => {
     return (
-        <div className={s.available} style={theme}>
+        <div className={s.available} style={theme} id="contacts">
             <div>
                 <h3>I Am Available For Work</h3>
             </div>

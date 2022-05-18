@@ -14,7 +14,7 @@ export const Projects = ({ dark }) => {
     }, [dark]);
 
     return (
-        <div className={s.projects} style={theme}>
+        <div className={s.projects} style={theme} id="projects">
             <div className={s.title}>
                 <h2>- Projects & Showcases -</h2>
             </div>

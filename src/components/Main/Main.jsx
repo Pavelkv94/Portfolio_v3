@@ -17,13 +17,13 @@ export const Main = () => {
             setStyle({ ...style, top: "40vh" });
         }
         if (window.pageYOffset > 150) {
-            setStyle({ ...style, opacity: "0.8", top: "50vh" });
+            setStyle({ ...style, opacity: "0.9", top: "50vh" });
         }
         if (window.pageYOffset > 200) {
-            setStyle({ ...style, opacity: "0.6", top: "55vh" });
+            setStyle({ ...style, opacity: "0.8", top: "55vh" });
         }
         if (window.pageYOffset > 250) {
-            setStyle({ ...style, opacity: "0.4", top: "60vh" });
+            setStyle({ ...style, opacity: "0.5", top: "60vh" });
         }
         if (window.pageYOffset > 300) {
             setStyle({ ...style, opacity: "0.2", top: "65vh" });
@@ -37,7 +37,7 @@ export const Main = () => {
     };
     
     return (
-        <div>
+        <div id="main">
             <div className={s.main_back_img}></div>
             <div>
                 <div className={s.mainContent}>
@@ -48,7 +48,7 @@ export const Main = () => {
                             <span> name </span> is<br />
                             <span> Pavel </span>
                              Kazlou.<br />
-                            <ReactTypingEffect text="I'm frontend-developer!" style={{fontSize: '24px'}}/>
+                            <ReactTypingEffect text="I'm frontend-developer!" style={{fontSize: '24px'}} className={s.type}/>
                         </h2>
                         <Fade><div className={s.mainPhoto}></div></Fade>
                     </div>

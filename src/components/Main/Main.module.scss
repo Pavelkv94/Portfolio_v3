@@ -27,6 +27,11 @@
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 640px) {
+            font-size: 36px;
+            flex-wrap: wrap;
+            width: 300px;
+        }
         .mainPhoto {
             width: 300px;
             height: 400px;
@@ -34,6 +39,10 @@
             background-size: cover;
             background-position: 50%;
             background-image: url("../../assets/avatar.jpg");
+
+            @media screen and (max-width: 640px) {
+                width: 100%;
+            }
         }
 
         h2 {
@@ -47,7 +56,11 @@
             font-family: "Poppins", sans-serif;
 
             @media screen and (max-width: 640px) {
-                font-size: 48px;
+                font-size: 24px;
+            }
+            .type {
+                @media screen and (max-width: 640px) {
+                font-size: 10px !important;}
             }
 
             span {

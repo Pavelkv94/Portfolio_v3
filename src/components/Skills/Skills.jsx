@@ -14,7 +14,7 @@ export const Skills = ({ dark }) => {
     }, [dark]);
 
     return (
-        <div className={s.skills} style={theme}>
+        <div className={s.skills} style={theme} id="skills">
             <div className={s.line}>
                 <div>
                     <span>10+ Pet Projects</span>
