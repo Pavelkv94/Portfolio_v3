@@ -32,7 +32,8 @@
     .description {
         width: 550px;
 
-        p, h3 {
+        p,
+        h3 {
             margin-left: 20px;
         }
 
@@ -93,11 +94,19 @@
                     );
                     -webkit-background-clip: text !important;
                     -webkit-text-fill-color: transparent;
+
+                    @media screen and (max-width: 640px) {
+                        -webkit-text-fill-color: #ff447f;
+                    }
                 }
 
                 &:hover {
                     box-shadow: 0px 0px 15px rgb(201, 201, 201);
                 }
+            }
+
+            @media screen and (max-width: 640px) {
+                margin-right: 20px;
             }
         }
 

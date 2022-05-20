@@ -54,5 +54,9 @@
         background: linear-gradient(to right, #17c0e9, #c96ddd, #f45162);
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 640px) {
+            -webkit-text-fill-color: #ff447f;
+        }
     }
 }

@@ -20,6 +20,7 @@ function App() {
     
     return (
         <div className="App">
+            <div className="shadow"> </div>
             <div className="nav"><Nav /></div>
             <div className="switch">
                 <CustomizedSwitches dark={dark} setDark={setDark} />
@@ -32,6 +33,7 @@ function App() {
             </div>
             <Available theme={theme} />
             <Contact />
+           
         </div>
     );
 }
