@@ -46,7 +46,7 @@ export const Contact = () => {
                 </section>
                 <section>
                     <h2>Contact Info.</h2>
-                    <p>pavel.kv94@yandex.com</p>
+                    <a href="mailto:pavel.kv94@yandex.by"><p>pavel.kv94@yandex.by</p></a>
                     <div>
                         <a
                             href="https://www.linkedin.com/in/pavel-kv94/"

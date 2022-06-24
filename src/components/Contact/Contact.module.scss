@@ -118,9 +118,12 @@
                 @media screen and (max-width: 640px) {
                     width: 100%;
                 }
-                p {
+                a {
+                    color: white;
+                    text-decoration: none;
                     margin-top: 100px;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
+                    font-size: 24px;
 
                     @media screen and (max-width: 640px) {
                         margin-top: 10px;
@@ -133,9 +136,9 @@
                     display: flex;
                     justify-content: space-around;
 
-                    @media screen and (max-width: 640px) {
-                        margin-bottom: 80px;
-                    }
+                    // @media screen and (max-width: 640px) {
+                    //     margin-bottom: 80px;
+                    // }
 
                     a {
                         color: white;
