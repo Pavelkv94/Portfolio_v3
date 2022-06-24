@@ -27,11 +27,9 @@ body {
     justify-content: center;
 }
 
-.App {
-    background-color: rgba(0, 0, 0, 0.683);
-}
 .shadow {
     background-image: url("./assets/back.jpg");
+    filter: brightness(40%);
     position: fixed;
     top: 0;
     right: 0;

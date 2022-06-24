@@ -11,18 +11,22 @@
 
     @media screen and (max-width: 1200px) {
         flex-wrap: wrap;
-        margin: 30px 30px;
-        width: 100%;
+        margin: 30px;
+        // width: 100%;
     }
     @media screen and (max-width: 640px) {
-        margin: 30px 0px;
+        margin: 30px 0;
+        width: 375px;
+    }
+    @media screen and (max-width: 412px) {
+        width: 355px;
     }
     .photo {
         width: 450px;
         height: 300px;
         background-size: cover;
         background-position: 50%;
-        border-radius: 5px 0 0 5px;
+        border-radius: 5px 5px 0 0;
 
         @media screen and (max-width: 640px) {
             width: 100%;
@@ -67,7 +71,7 @@
                 display: inline-block;
                 color: linear-gradient(to left, #a6c0c6, #efefef, #8b7779);
                 background-color: transparent;
-                border-radius: 30px 30px 30px 30px;
+                border-radius: 30px;
                 background-color: white;
                 box-shadow: none;
                 text-decoration: none;
@@ -115,7 +119,10 @@
             width: 250px;
             height: 100px;
             padding-left: 100px;
+            margin-right: 60px;
         }
+
+
     }
 
     &:after {

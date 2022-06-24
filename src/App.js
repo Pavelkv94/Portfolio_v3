@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Available } from "./components/Available/Available";
 import { Contact } from "./components/Contact/Contact";
+import { Customers } from "./components/Customers/Customers";
 import { Main } from "./components/Main/Main";
 import { Nav } from "./components/nav/Nav";
 import { Projects } from "./components/Projects/Projects";
@@ -32,6 +33,7 @@ function App() {
                 <div></div>
             </div>
             <Available theme={theme} />
+            <Customers />
             <Contact />
            
         </div>
