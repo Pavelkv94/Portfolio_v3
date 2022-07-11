@@ -10,7 +10,7 @@ export const Customers = () => {
                 <h2>My Clients</h2>
                 <div>
                    <a href="https://zakodix.tech/" target={'_blank'} rel="noreferrer"><img src={zakodix_logo} alt="zakodix-logo" /><span>Zakodix Tech Group</span></a>
-                   <a href="http://respawnasp.net/" target={'_blank'} rel="noreferrer"><img src={case_logo} alt="case-logo" /><span>respawnasp.net</span></a>
+                   <a href="http://respawnasp.net/" target={'_blank'} rel="noreferrer"><img src={case_logo} alt="case-logo" /><span>Respawn Asp.NET</span></a>
                 </div>
             </div>
 

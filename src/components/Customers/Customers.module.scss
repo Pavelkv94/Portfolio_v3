@@ -30,6 +30,10 @@
             align-items: center;
             margin: 20px;
             
+            &:hover {
+                text-decoration: underline;
+                color: white;
+            }
             img {
                 width: 50px;
                 margin-right: 10px;
