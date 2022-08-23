@@ -47,7 +47,7 @@ export const skills = [
         title: "Npm",
         skills: [
             "Material UI",
-            "ANTD-design",
+            "ANT-design",
             "Semantic-Ui-React",
             "React-form",
            ],
