@@ -43,6 +43,16 @@ export const projects = [
         img: momentumImg
     },
     {
+        title: "Social Network",
+        description:
+            "Social network written in React and Typescript. The backend on the NodeJS was also developed.",
+        technologies: ["Typescript", "React/Redux", "WebSocket", "Node JS, Express", "MongoDB"],
+        linkResourse: "https://pavelkv94.github.io/Dart-net/",
+        linkCode: "https://github.com/Pavelkv94/Dart-net",
+        linkBack: "https://github.com/Pavelkv94/Dart-server",
+        img: socialImg
+    },
+    {
         title: "Todolist",
         description:
             "Todolist application with authorization.",
@@ -77,15 +87,6 @@ export const projects = [
         linkResourse: "http://Pavelkv94.github.io/Github-monitor",
         linkCode: "https://github.com/Pavelkv94/Github-monitor",
         img: githubImg
-    },
-    {
-        title: "Social Network",
-        description:
-            "Social network written in React and Еypescript. There are authorization, a chat built on websockets, and so on.",
-        technologies: ["Typescript", "React/Redux", "REST-API", "ANTD design", "React router dom", "Redux thunk", "WebSocket"],
-        linkResourse: "https://pavelkv94.github.io/Social-Network/",
-        linkCode: "https://github.com/Pavelkv94/Social-Network",
-        img: socialImg
     },
     {
         title: "Counter",
