@@ -5,9 +5,10 @@ export const skills = [
             "React",
             "Redux",
             "npm/yarn",
-            "Redux Thunk",
+            "Redux Thunk/Redux Saga",
             "Redux Toolkit",
             "React router dom",
+            "React-query"
         ],
     },
     {
@@ -26,10 +27,8 @@ export const skills = [
         skills: [
             "Axios",
             "WebSocket",
-            "Redux Thunk",
-            "Redux Saga",
-            "Postman",
-            "Fetch"
+            "Fetch",
+            "Postman"
         ],
     },
     {
@@ -37,10 +36,8 @@ export const skills = [
         skills: [
             "Javascript",
             "Typescript",
-            "Redux Thunk",
-            "Redux Toolkit",
-            "React router dom",
             "Asynchronous operations",
+            "ES6"
         ],
     },
     {
@@ -50,13 +47,14 @@ export const skills = [
             "ANT-design",
             "Semantic-Ui-React",
             "React-form",
+            "i18n(localization)"
            ],
     },
     {
         title: "Other",
         skills: [
             "Migrating to TypeScript",
-            "Registration and Login form creation",
+            "Docker(basic)",
             "Jest. Unit testing",
             "MongoDB",
             "NodeJS",
