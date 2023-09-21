@@ -2,20 +2,18 @@ export const skills = [
     {
         title: "React",
         skills: [
-            "React",
-            "Redux",
-            "npm/yarn",
+            "React/Redux",
+            "React-query",
+            "Next JS",
             "Redux Thunk/Redux Saga",
             "Redux Toolkit",
             "React router dom",
-            "React-query"
         ],
     },
     {
         title: "HTML/CSS",
         skills: [
-            "HTML5",
-            "CSS3",
+            "HTML5/CSS3",
             "Flex/Grid",
             "SASS/SCSS",
             "Bootstrap",
@@ -26,8 +24,8 @@ export const skills = [
         title: "REST-API",
         skills: [
             "Axios",
-            "WebSocket",
             "Fetch",
+            "WebSocket",
             "Postman"
         ],
     },
@@ -43,9 +41,11 @@ export const skills = [
     {
         title: "Npm",
         skills: [
+            "npm/yarn",
             "Material UI",
             "ANT-design",
             "Semantic-Ui-React",
+            "Chakra UI",
             "React-form",
             "i18n(localization)"
            ],
@@ -54,6 +54,7 @@ export const skills = [
         title: "Other",
         skills: [
             "Migrating to TypeScript",
+            "Vite",
             "Docker(basic)",
             "Jest. Unit testing",
             "MongoDB",

@@ -17,9 +17,9 @@ export const Skills = ({ dark }) => {
         <div className={s.skills} style={theme} id="skills">
             <div className={s.line}>
                 <div>
-                    <span>10+ Pet Projects</span>
-                    <span>2+ years of experience</span>
-                    <span>3 Commercial Projects</span>
+                    <span>17+ Pet Projects</span>
+                    <span>3+ years of experience</span>
+                    <span>10 Commercial Projects</span>
                 </div>
             </div>
 
