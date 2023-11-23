@@ -19,17 +19,20 @@
     }
     div {
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-content: space-between;
-        flex-wrap: wrap;
         margin-bottom: 50px;
-
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
         a {
             text-decoration: none;
             display: flex;
             align-items: center;
-            margin: 20px;
-            
+            margin: 10px 0px 20px 100px;
+            @media screen and (max-width: 600px) {
+            margin-left: 20px;}
             &:hover {
                 text-decoration: underline;
                 color: white;

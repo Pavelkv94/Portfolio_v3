@@ -6,6 +6,7 @@ import github from "../../assets/github.png";
 import todo from "../../assets/todo.png";
 import cards from "../../assets/cards.png";
 import social from "../../assets/social.png";
+import crypto from "../../assets/cryptowave.png";
 
 const momentumImg = {
     backgroundImage: `url(${momentum})`,
@@ -31,8 +32,20 @@ const cardsImg = {
 const socialImg = {
     backgroundImage: `url(${social})`,
 };
+const cryptowaveImg = {
+    backgroundImage: `url(${crypto})`,
+};
 
 export const projects = [
+    {
+        title: "CryptoWave",
+        description:
+            "Web application for monitoring Cryptocurrensies with integrated Telegram bot.",
+        technologies: ["React/Typescript", "Redux toolkit", "Chakra-UI", "Vite", "Chart JS", "MongoDB", "Node JS, Express"],
+        linkResourse: "https://pavelkv94.github.io/Cryptowave/",
+        linkCode: "https://github.com/Pavelkv94/Cryptowave",
+        img: cryptowaveImg
+    },
     {
         title: "Momentum",
         description:
@@ -70,15 +83,15 @@ export const projects = [
         linkCode: "https://github.com/Pavelkv94/Meditation-App",
         img: meditationImg
     },
-    {
-        title: "Learn Cards App",
-        description:
-            "You can create decks with cards to learn something, like words in a new language, and study them.",
-        technologies: ["Typescript", "React/Redux", "REST-API", "Redux Toolkit", "React router dom", "Redux thunk"],
-        linkResourse: "https://sozdatel31.github.io/FridayIgnatProject",
-        linkCode: "https://github.com/Pavelkv94/FridayIgnatProject",
-        img: cardsImg
-    },
+    // {
+    //     title: "Learn Cards App",
+    //     description:
+    //         "You can create decks with cards to learn something, like words in a new language, and study them.",
+    //     technologies: ["Typescript", "React/Redux", "REST-API", "Redux Toolkit", "React router dom", "Redux thunk"],
+    //     linkResourse: "https://sozdatel31.github.io/FridayIgnatProject",
+    //     linkCode: "https://github.com/Pavelkv94/FridayIgnatProject",
+    //     img: cardsImg
+    // },
     {
         title: "Github-Monitor",
         description:

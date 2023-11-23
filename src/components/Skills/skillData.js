@@ -47,7 +47,8 @@ export const skills = [
             "Semantic-Ui-React",
             "Chakra UI",
             "React-form",
-            "i18n(localization)"
+            "i18n(localization)",
+            "Chart JS"
            ],
     },
     {
