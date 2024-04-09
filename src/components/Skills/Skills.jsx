@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Skill } from "./Skill/Skill";
 import { skills } from "./skillData";
 import s from "./Skills.module.scss";

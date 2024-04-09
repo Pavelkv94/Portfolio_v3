@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Project } from "./Project/Project";
 import s from "./Projects.module.scss";
 import { projects } from "./projectsData";
