@@ -42,7 +42,7 @@ export const projects = [
         description:
             "Web application for monitoring Cryptocurrensies with integrated Telegram bot.",
         technologies: ["React/Typescript", "Redux toolkit", "Chakra-UI", "Vite", "Chart JS", "MongoDB", "Node JS, Express"],
-        linkResourse: "https://pavelkv94.github.io/Cryptowave/",
+        linkResourse: "https://cryptowave-pavel-kazlou.netlify.app/",
         linkCode: "https://github.com/Pavelkv94/Cryptowave",
         img: cryptowaveImg
     },
