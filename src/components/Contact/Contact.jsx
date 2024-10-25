@@ -4,7 +4,7 @@ import { RiTelegramLine } from "react-icons/ri";
 import { useForm } from "@formspree/react";
 
 export const Contact = () => {
-  const [state, handleSubmit] = useForm("xzbyvjwk");
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_MAIL_KEY);
 
   const currentYear = new Date().getFullYear();
 
