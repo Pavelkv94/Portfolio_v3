@@ -1,43 +1,36 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { Available } from "./components/Available/Available";
 import { Contact } from "./components/Contact/Contact";
 import { Customers } from "./components/Customers/Customers";
 import { Main } from "./components/Main/Main";
-import { Nav } from "./components/nav/Nav";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
-import CustomizedSwitches from "./components/Switch/Switch";
+import { Nav } from "./components/nav/Nav";
+import GreatRow from "./components/GreatRow/GreatRow";
 
 function App() {
-    const [theme, setTheme] = useState({ background: "white" });
-    const [dark, setDark] = useState(false);
+  const [theme, setTheme] = useState({ background: "white" });
+  const [dark, setDark] = useState(false);
 
-    useEffect(() => {
-        dark
-            ? setTheme({ background: "#0C0F16", transition: "1s" })
-            : setTheme({ background: "white", transition: "1s" });
-    }, [dark]);
-    
-    return (
-        <div className="App">
-            <div className="shadow"> </div>
-            <div className="nav"><Nav /></div>
-            <div className="switch">
-                <CustomizedSwitches dark={dark} setDark={setDark} />
-            </div>
-            <Main />
-            <Skills dark={dark} />
-            <Projects dark={dark} />
-            <div className="custom-hr" style={theme}>
-                <div></div>
-            </div>
-            <Available theme={theme} />
-            <Customers />
-            <Contact />
-           
-        </div>
-    );
+  useEffect(() => {
+    dark ? setTheme({ background: "#0C0F16", transition: "1s" }) : setTheme({ background: "white", transition: "1s" });
+  }, [dark]);
+
+  return (
+    <div className="App">
+      <div className="shadow"> </div>
+      <Nav dark={dark} setDark={setDark} />
+      <Main />
+      <GreatRow />
+      <Skills dark={dark} />
+      <div className="custom-hr" style={theme}>
+        <div></div>
+      </div>
+      <Projects dark={dark} />
+      <Customers />
+      <Contact />
+    </div>
+  );
 }
 
 export default App;

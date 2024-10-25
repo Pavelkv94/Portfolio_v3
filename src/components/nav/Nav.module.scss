@@ -1,31 +1,50 @@
-.nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    background-color: black;
+.navWrapper {
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  transition: "1s";
+  backdrop-filter: blur(5px);
 
-    & a {
+  .nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: max-content;
+      margin-right: 20px;
+
+      & a {
         color: white;
         text-decoration: none;
-    }
-    & a:hover {
+        margin: 0 10px;
+      }
+      & a:hover {
         text-decoration: underline;
         transform: scale(1.05);
         transition: 0.2s;
         color: #ff447f;
         cursor: pointer;
-    }
-    .active {
+      }
+      .active {
         transform: scale(1.05);
         transition: 0.2s;
         color: #ff447f;
         cursor: pointer;
-    }
-    @media screen and (max-width: 640px) {
+      }
+      @media screen and (max-width: 640px) {
         display: none;
+      }
     }
+  }
 }

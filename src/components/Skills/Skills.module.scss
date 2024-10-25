@@ -1,62 +1,127 @@
-.line {
-    width: 100%;
-    min-height: 150px;
-    background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+.skills {
+  background: #f7f7f7;
+  padding: 40px 0 80px 0;
+  font-family: "Poppins", sans-serif;
+
+  .techs {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0;
 
+    img {
+      margin: 20px;
+    }
+  }
 
-    div {
-        width: 1200px;
+  .skillsBlock {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    p {
+      margin: 0;
+      font-size: 20px;
+      margin: 5px 0;
+    }
+    @media screen and (max-width: 640px) {
+      justify-content: center;
+    }
+
+    .matrixWrapper {
+      box-shadow: 0 10px 50px rgb(76 76 76 / 5%);
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: all 0.4s;
+      z-index: 3;
+      background: #eee;
+      position: relative;
+      padding: 0 0 2px 2px;
+      .item {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(247, 247, 247);
+        border-radius: 5px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+        top: -1;
+        right: 0;
+        left: 0;
+        transition: all 0.5s;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: all 0.5s;
+        border-radius: 5px;
+        z-index: -1;
+      }
 
-        @media screen and (max-width: 1200px) {
-            justify-content: space-around;
+      &:hover {
+        &:after {
+          width: 100%;
+          height: 100%;
+          z-index: -1;
         }
-        span {
-            color: #ffffff;
-            font-size: 26px;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
+      }
+
+      .matrix {
+        max-width: 600px;
+        margin: 10px;
+        .matrixItem {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+
+          span {
+            width: 200px;
+          }
+          .skillIndicator {
+            width: 300px;
+            height: 5px;
+            background: rgb(199, 199, 199);
+
+            .filler {
+              height: 100%;
+              background: linear-gradient(to right, #1761e9, #c96ddd, #f45162);
+            }
+          }
         }
+      }
     }
-}
-.skills {
-    background: #f7f7f7;
-    min-height: 100vh;
+  }
 
-    .skillsBock {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1200px;
-        flex-wrap: wrap;
-        margin: 0 auto;
-
-        @media screen and (max-width: 640px) {
-            justify-content: center;
-        }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 1.4em;
+    word-wrap: break-word;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #17c0e9, #c96ddd, #f45162);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 0 40px;
+    @media screen and (max-width: 640px) {
+      -webkit-text-fill-color: #ff447f;
     }
-
-    h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 48px;
-        line-height: 1.4em;
-        word-wrap: break-word;
-        font-family: "Poppins", sans-serif;
-        background: linear-gradient(to right, #17c0e9, #c96ddd, #f45162);
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent;
-
-        @media screen and (max-width: 640px) {
-            -webkit-text-fill-color: #ff447f;
-        }
-    }
+  }
 }

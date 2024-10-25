@@ -21,12 +21,6 @@ body {
   z-index: 5;
 }
 
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .shadow {
   background-image: url("./assets/back.jpg");
   filter: brightness(40%);

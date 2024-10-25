@@ -1,4 +1,3 @@
-import React from "react";
 import s from "./Main.module.scss";
 import ReactTypingEffect from 'react-typing-effect';
 import { Fade } from "react-awesome-reveal";
@@ -49,7 +48,7 @@ export const Main = () => {
                             <span> name </span> is<br />
                             <span> Pavel </span>
                              Kazlou.<br />
-                            <ReactTypingEffect text="I'm frontend-developer!" style={{fontSize: '24px'}} className={s.type}/>
+                            <ReactTypingEffect text="I'm fullstack JS developer!" style={{fontSize: '24px'}} className={s.type}/>
                         </h2>
                         <Fade><div className={s.mainPhoto}></div></Fade>
                     </div>
