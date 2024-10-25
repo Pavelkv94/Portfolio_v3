@@ -14,7 +14,7 @@ export const Projects = ({ dark }) => {
   return (
     <div className={s.projects} style={theme} id="projects">
       <div className={s.title}>
-        <h2>- Projects & Showcases -</h2>
+        <h2>PROJECTS & SHOWCASES</h2>
       </div>
       <Fade>
         <section>
@@ -26,8 +26,12 @@ export const Projects = ({ dark }) => {
             ))}
           </div>
           <div className={s.view}>
+            {/* <video muted loop width={900} autoPlay key={currentProjectIndex}>
+              <source src={projects[currentProjectIndex].preview} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
             <div className={s.preview}>
-              <video muted loop width={600} autoPlay key={currentProjectIndex}>
+              <video muted loop width={800} autoPlay key={currentProjectIndex}>
                 <source src={projects[currentProjectIndex].preview} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

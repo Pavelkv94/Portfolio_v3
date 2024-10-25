@@ -7,7 +7,7 @@ import pb_logo from "../../assets/pb-logo.svg";
 export const Customers = () => {
   return (
     <div className={s.line} id="contacts">
-      <h2>My Clients</h2>
+      <h2>MY CLIENTS</h2>
       <div>
         <a href="https://zakodix.tech/" target={"_blank"} rel="noreferrer">
           <img src={zakodix_logo} alt="zakodix-logo" />

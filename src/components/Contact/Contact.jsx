@@ -35,13 +35,13 @@ export const Contact = () => {
             </a>
             <div>
               <a href="https://www.linkedin.com/in/pavel-kv94/" target={"_blank"} rel="noreferrer">
-                <AiOutlineLinkedin size={46} />
+                <AiOutlineLinkedin size={70} />
               </a>
               <a href="https://t.me/pavel_mint" target={"_blank"} rel="noreferrer">
-                <RiTelegramLine size={46} />
+                <RiTelegramLine size={70} />
               </a>
               <a href="https://github.com/Pavelkv94" target={"_blank"} rel="noreferrer">
-                <AiFillGithub size={46} />
+                <AiFillGithub size={70} />
               </a>
             </div>
           </div>

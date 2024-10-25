@@ -1,82 +1,65 @@
-// .main_back_img {
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background-size: cover;
-//     display: flex;
-//     align-items: center;
-//     // background-image: url("../../assets/back.jpg");
-//     z-index: -2;
-// }
 .mainContent {
-    width: 100%;
-    min-height: 100vh;
-    // background-color: rgba(0, 0, 0, 0.683);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+
+  .container {
+    width: 1200px;
+    z-index: -11;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
+    justify-content: space-between;
 
-    .container {
-        width: 1200px;
-        z-index: -1;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    @media screen and (max-width: 640px) {
+      font-size: 36px;
+      flex-wrap: wrap;
+      width: 300px;
+    }
+    .mainPhoto {
+      width: 300px;
+      height: 400px;
+      margin: 5px;
+      background-size: cover;
+      background-position: 50%;
+      background-image: url("../../assets/sticker.webp");
+
+      @media screen and (max-width: 640px) {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 65px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #fff;
+      width: 58%;
+      line-height: 1.2em;
+      word-wrap: break-word;
+      font-family: "Poppins", sans-serif;
+
+      @media screen and (max-width: 640px) {
+        font-size: 24px;
+      }
+      .type {
+        @media screen and (max-width: 640px) {
+          font-size: 10px !important;
+        }
+      }
+
+      span {
+        background: linear-gradient(to right, #12c2e9, #d641a7, #f64f59);
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
 
         @media screen and (max-width: 640px) {
-            font-size: 36px;
-            flex-wrap: wrap;
-            width: 300px;
+          -webkit-text-fill-color: #ff447f;
         }
-        .mainPhoto {
-            width: 300px;
-            height: 400px;
-            margin: 5px;
-            background-size: cover;
-            background-position: 50%;
-            background-image: url("../../assets/sticker.webp");
-
-            @media screen and (max-width: 640px) {
-                width: 100%;
-            }
-        }
-
-        h2 {
-            font-size: 65px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            color: #fff;
-            width: 58%;
-            line-height: 1.2em;
-            word-wrap: break-word;
-            font-family: "Poppins", sans-serif;
-
-            @media screen and (max-width: 640px) {
-                font-size: 24px;
-            }
-            .type {
-                @media screen and (max-width: 640px) {
-                font-size: 10px !important;}
-            }
-
-            span {
-                background: linear-gradient(
-                    to right,
-                    #12c2e9,
-                    #d641a7,
-                    #f64f59
-                );
-                -webkit-background-clip: text !important;
-                -webkit-text-fill-color: transparent;
-
-                @media screen and (max-width: 640px) {
-                    -webkit-text-fill-color: #ff447f;
-                }
-            }
-        }
+      }
     }
+  }
 }

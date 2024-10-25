@@ -2,7 +2,7 @@ import todoVideo from "../../assets/projects/todo.webm";
 import githubVideo from "../../assets/projects/github.webm";
 import calcVideo from "../../assets/projects/calc.webm";
 import orcusVideo from "../../assets/projects/orcus.webm";
-// import todoVideo from "../../assets/projects/todo.webm";
+import momeVideo from "../../assets/projects/mome.mp4";
 // import todoVideo from "../../assets/projects/todo.webm";
 // import todoVideo from "../../assets/projects/todo.webm";
 
@@ -18,11 +18,11 @@ export const projects = [
   {
     title: "Momentum",
     description:
-      "Momentum is an analogue of the Chrome Web Store application of the same name. The application shows the time and username, his goal for the current day. The background image changes depending on the time of day.",
-    technologies: ["Javascript", "React", "LocalStorage", "Vite", "React router dom", "SASS"],
-    linkResourse: "https://pavelkv94.github.io/Momentum/",
-    linkCode: "https://github.com/Pavelkv94/Momentum",
-    img: todoVideo,
+      "This application is an enhanced alternative to Momentum from the Chrome Web Store. It not only displays the current weather and changes wallpapers based on the time of day, but also includes a meditation and relaxation tab. Users can embark on a virtual road trip, enjoying local radio stations, or choose a walking tour of various cities around the world, immersing themselves in the atmosphere of each location. The app also offers the opportunity to enjoy nature and its sounds, making it an ideal tool for stress relief and productivity enhancement. The intuitive interface and variety of features provide users with a unique experience, allowing them to relax and find inspiration in their daily lives.",
+    technologies: ["Javascript", "React", "LocalStorage", "Vite", "React router dom", "SASS", "Youtube API", "Work with audio"],
+    linkResourse: "https://momentum-v2.netlify.app/",
+    linkCode: "https://github.com/Pavelkv94/Momentum_V2",
+    preview: momeVideo,
   },
   {
     title: "Social Network",

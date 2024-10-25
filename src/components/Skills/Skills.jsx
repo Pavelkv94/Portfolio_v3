@@ -17,7 +17,7 @@ export const Skills = ({ dark }) => {
       <Fade bottom>
         <div className={s.techs}>
           {techs.map((el, i) => (
-            <img key={i} width={50} src={el} />
+            <img key={i} width={70} src={el} />
           ))}
         </div>
         <div className={s.skillsBlock}>
