@@ -13,6 +13,7 @@ export const projects = [
     technologies: ["React/Typescript", "Redux toolkit", "Chakra-UI", "Vite", "Chart JS", "MongoDB", "Node JS, Express"],
     linkResourse: "https://cryptowave-pavel-kazlou.netlify.app/",
     linkCode: "https://github.com/Pavelkv94/Cryptowave",
+    linkBack: "https://github.com/Pavelkv94/Cryptowave-server",
     preview: cryptowaveVideo,
   },
   {
