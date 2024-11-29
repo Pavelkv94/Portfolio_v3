@@ -1,9 +1,9 @@
-import todoVideo from "../../assets/projects/todo.webm";
-import githubVideo from "../../assets/projects/github.webm";
+import todoVideo from "../../assets/projects/todo.mp4";
+import githubVideo from "../../assets/projects/github.mp4";
 import calcVideo from "../../assets/projects/calc.webm";
-import orcusVideo from "../../assets/projects/orcus.webm";
+import orcusVideo from "../../assets/projects/orcus.mp4";
 import momeVideo from "../../assets/projects/mome.mp4";
-// import todoVideo from "../../assets/projects/todo.webm";
+import cryptowaveVideo from "../../assets/projects/cryptowave.mp4";
 // import todoVideo from "../../assets/projects/todo.webm";
 
 export const projects = [
@@ -13,7 +13,7 @@ export const projects = [
     technologies: ["React/Typescript", "Redux toolkit", "Chakra-UI", "Vite", "Chart JS", "MongoDB", "Node JS, Express"],
     linkResourse: "https://cryptowave-pavel-kazlou.netlify.app/",
     linkCode: "https://github.com/Pavelkv94/Cryptowave",
-    preview: todoVideo,
+    preview: cryptowaveVideo,
   },
   {
     title: "Momentum",
