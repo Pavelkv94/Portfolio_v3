@@ -26,6 +26,16 @@ export const projects = [
     preview: momeVideo,
   },
   {
+    title: "TG Family tuner",
+    description:
+      "This Telegram bot offers users a wide selection of world radio stations to listen to. Users can easily find and add their favorite stations to a favorites list. The advantage of using this bot is the ability to listen to radio directly within Telegram, making the process simple and convenient. The main goal of the application is to develop skills in working with Telegram API and MiniApp, providing users with a unique experience in the world of online radio.",
+    technologies: ["Typescript", "React", "Redux", "Vite", "node-telegram-bot-api", "mongoDB", "Express", "Work with audio"],
+    linkResourse: "https://t.me/fam_mus_bot",
+    linkCode: "https://github.com/Pavelkv94/Family-tuner-client",
+    linkBack: "https://github.com/Pavelkv94/Family-tuner-server",
+    preview: momeVideo,
+  },
+  {
     title: "Social Network",
     description: "Social network written in React and Typescript. The backend on the NodeJS was also developed.",
     technologies: ["Typescript", "React/Redux", "WebSocket", "Node JS, Express", "MongoDB"],
