@@ -8,7 +8,7 @@ export const Skills = ({ dark }) => {
   const [theme, setTheme] = useState({ background: "white" });
 
   useEffect(() => {
-    dark ? setTheme({ background: "#11141B", transition: "1s" }) : setTheme({ background: "#FFF", transition: "1s" });
+    dark ? setTheme({ background: "#28292b", transition: "1s" }) : setTheme({ background: "#FFF", transition: "1s" });
   }, [dark]);
 
   return (

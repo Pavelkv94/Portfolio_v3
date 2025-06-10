@@ -3,6 +3,7 @@ import githubVideo from "../../assets/projects/github.mp4";
 import calcVideo from "../../assets/projects/calc.webm";
 import orcusVideo from "../../assets/projects/orcus.mp4";
 import momeVideo from "../../assets/projects/mome.mp4";
+import familyVideo from "../../assets/projects/family.webm";
 import cryptowaveVideo from "../../assets/projects/cryptowave.mp4";
 // import todoVideo from "../../assets/projects/todo.webm";
 
@@ -33,7 +34,7 @@ export const projects = [
     linkResourse: "https://t.me/fam_mus_bot",
     linkCode: "https://github.com/Pavelkv94/Family-tuner-client",
     linkBack: "https://github.com/Pavelkv94/Family-tuner-server",
-    preview: momeVideo,
+    preview: familyVideo,
   },
   {
     title: "Social Network",

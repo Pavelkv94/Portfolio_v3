@@ -8,7 +8,7 @@ export const Projects = ({ dark }) => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 
   useEffect(() => {
-    dark ? setTheme({ background: "#0C0F16", transition: "1s" }) : setTheme({ background: "white", transition: "1s" });
+    dark ? setTheme({ background: "#28292b", transition: "1s" }) : setTheme({ background: "white", transition: "1s" });
   }, [dark]);
 
   return (
@@ -20,7 +20,7 @@ export const Projects = ({ dark }) => {
         <section>
           <div className={s.list}>
             {projects.map((el, i) => (
-              <div key={i} className={`${s.listItem} ${i === currentProjectIndex ? s.active : {}}`} onClick={() => setCurrentProjectIndex(i)}>
+              <div key={i} className={`${s.listItem} ${i === currentProjectIndex ? s.active : {}} ${dark ? s.darkListItem : ""}`} onClick={() => setCurrentProjectIndex(i)}>
                 {el.title}
               </div>
             ))}

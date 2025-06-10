@@ -50,6 +50,10 @@
         text-align: left;
         cursor: pointer;
         margin-bottom: 8px;
+        &.darkListItem {
+          color: #fff;
+          background-color: #000000;
+        }
 
         &:hover {
           background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);

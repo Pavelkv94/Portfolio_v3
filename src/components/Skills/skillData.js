@@ -18,11 +18,11 @@ export const frontendSkills = [
   { title: "Redux Thunk/Redux Saga", level: 8 },
   { title: "MobX", level: 3 },
   { title: "HTML5/CSS3", level: 8 },
-  { title: "Flex/Grid", level: 8 },
   { title: "SASS/SCSS", level: 7 },
-  { title: "Materual UI", level: 7 },
-  { title: "Chakra UI", level: 8 },
+  { title: "Material UI", level: 8 },
+  { title: "Chakra UI", level: 9 },
   { title: "Semantic UI React", level: 9 },
+  { title: "Shadcn UI", level: 8 },
   { title: "Ant Desing", level: 8 },
   { title: "Docusaurus", level: 5 },
   { title: "ChartJs", level: 6 },
@@ -30,8 +30,6 @@ export const frontendSkills = [
   { title: "Google maps API", level: 7 },
   { title: "Yandex maps API", level: 7 },
   { title: "OpenStreetMaps API", level: 7 },
-  { title: "Shadcn UI", level: 7},
-  { title: "rsbuild", level: 7},
 ];
 
 export const backendSkills = [
@@ -41,11 +39,16 @@ export const backendSkills = [
   { title: "Swagger", level: 9 },
   { title: "PostgreSQL", level: 7 },
   { title: "MongoDB", level: 9 },
-  { title: "Rest-API/WebSocket", level: 8 },
+  { title: "Redis", level: 7 },
+  { title: "GraphQL", level: 7 },
+  { title: "Rest-API", level: 8 },
+  { title: "WebSocket", level: 8 },
   { title: "node-telegram-bot-api", level: 8 },
-  { title: "Docker", level: 3 },
+  { title: "Docker", level: 5 },
   { title: "Jest", level: 6 },
   { title: "Inversify", level: 7 },
   { title: "Mongoose", level: 9 },
+  { title: "Prisma", level: 8 },
+  { title: "TypeORM", level: 8 },
 
 ];

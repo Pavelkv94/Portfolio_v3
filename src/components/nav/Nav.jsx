@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import s from "./Nav.module.scss";
 import { Link } from "react-scroll";
-import CustomizedSwitches from "../Switch/Switch";
 import PropTypes from "prop-types";
 
+// eslint-disable-next-line no-unused-vars
 export function Nav({ dark, setDark }) {
   const [theme, setTheme] = useState({ backgroundColor: "rgb(0, 0, 0, 0.5)" });
 
@@ -28,7 +28,7 @@ export function Nav({ dark, setDark }) {
             Contacts
           </Link>
         </div>
-        <CustomizedSwitches dark={dark} setDark={setDark} />
+        {/* <CustomizedSwitches dark={dark} setDark={setDark} /> */}
       </div>
     </div>
   );
