@@ -45,15 +45,15 @@ export const projects = [
     linkBack: "https://github.com/Pavelkv94/Family-tuner-server",
     preview: familyVideo,
   },
-  {
-    title: "Social Network",
-    description: "A modern social networking platform where users can follow others, share posts, comment, and like content. Features a common chat room for real-time communication. Built with React and Redux on the frontend, with an Express backend and Neo4j graph database to model user relationships. Implements WebSocket for real-time updates and chat, and JWT-based authentication for secure user sessions.",
-    technologies: ["Typescript", "React/Redux", "WebSocket", "Node JS, Express", "MongoDB", "Neo4j", "JWT", "AWS S3"],
-    linkResourse: "https://pavelkv94.github.io/Dart-net/",
-    linkCode: "https://github.com/Pavelkv94/Dart-net",
-    linkBack: "https://github.com/Pavelkv94/Dart-server",
-    preview: todoVideo,
-  },
+  // {
+  //   title: "Social Network",
+  //   description: "A modern social networking platform where users can follow others, share posts, comment, and like content. Features a common chat room for real-time communication. Built with React and Redux on the frontend, with an Express backend and Neo4j graph database to model user relationships. Implements WebSocket for real-time updates and chat, and JWT-based authentication for secure user sessions.",
+  //   technologies: ["Typescript", "React/Redux", "WebSocket", "Node JS, Express", "MongoDB", "Neo4j", "JWT", "AWS S3"],
+  //   linkResourse: "https://pavelkv94.github.io/Dart-net/",
+  //   linkCode: "https://github.com/Pavelkv94/Dart-net",
+  //   linkBack: "https://github.com/Pavelkv94/Dart-server",
+  //   preview: todoVideo,
+  // },
   {
     title: "Orcus",
     description:
