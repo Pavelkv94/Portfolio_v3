@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Plus Icon Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .example {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        /* Method 1: Using pseudo-elements */
+        .plus-icon-1 {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+        
+        .plus-icon-1::before,
+        .plus-icon-1::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+        }
+        
+        .plus-icon-1::before {
+            width: 20px;
+            height: 4px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .plus-icon-1::after {
+            width: 4px;
+            height: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* Method 2: Using border */
+        .plus-icon-2 {
+            width: 40px;
+            height: 40px;
+            background-color: #28a745;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .plus-icon-2::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+        }
+        
+        .plus-icon-2::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* Method 3: Using box-shadow */
+        .plus-icon-3 {
+            width: 40px;
+            height: 40px;
+            background-color: #dc3545;
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .plus-icon-3::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 4px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 0 4px white;
+        }
+        
+        /* Method 4: Simple with just one element */
+        .plus-icon-4 {
+            width: 40px;
+            height: 40px;
+            background-color: #ffc107;
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .plus-icon-4::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 4px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+        }
+        
+        .plus-icon-4::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 20px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* Method 5: Animated plus icon */
+        .plus-icon-5 {
+            width: 40px;
+            height: 40px;
+            background-color: #6f42c1;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .plus-icon-5:hover {
+            transform: scale(1.1);
+            background-color: #5a32a3;
+        }
+        
+        .plus-icon-5::before,
+        .plus-icon-5::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .plus-icon-5::before {
+            width: 20px;
+            height: 3px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .plus-icon-5::after {
+            width: 3px;
+            height: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .icon-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Plus Icon Examples</h1>
+    
+    <div class="example">
+        <h2>Method 1: Using pseudo-elements (::before and ::after)</h2>
+        <div class="icon-container">
+            <div class="plus-icon-1"></div>
+            <span>Blue square plus icon</span>
+        </div>
+        <div class="code-block">
+.plus-icon-1 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.plus-icon-1::before,
+.plus-icon-1::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+}
+
+.plus-icon-1::before {
+    width: 20px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus-icon-1::after {
+    width: 4px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+        </div>
+    </div>
+    
+    <div class="example">
+        <h2>Method 2: Circular plus icon</h2>
+        <div class="icon-container">
+            <div class="plus-icon-2"></div>
+            <span>Green circular plus icon</span>
+        </div>
+        <div class="code-block">
+.plus-icon-2 {
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    border-radius: 50%;
+    position: relative;
+}
+
+.plus-icon-2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+.plus-icon-2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+        </div>
+    </div>
+    
+    <div class="example">
+        <h2>Method 3: Using box-shadow (alternative approach)</h2>
+        <div class="icon-container">
+            <div class="plus-icon-3"></div>
+            <span>Red square plus icon with box-shadow</span>
+        </div>
+        <div class="code-block">
+.plus-icon-3 {
+    width: 40px;
+    height: 40px;
+    background-color: #dc3545;
+    border-radius: 4px;
+    position: relative;
+}
+
+.plus-icon-3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 4px white;
+}
+        </div>
+    </div>
+    
+    <div class="example">
+        <h2>Method 4: Simple approach</h2>
+        <div class="icon-container">
+            <div class="plus-icon-4"></div>
+            <span>Yellow square plus icon</span>
+        </div>
+        <div class="code-block">
+.plus-icon-4 {
+    width: 40px;
+    height: 40px;
+    background-color: #ffc107;
+    border-radius: 4px;
+    position: relative;
+}
+
+.plus-icon-4::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+.plus-icon-4::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+        </div>
+    </div>
+    
+    <div class="example">
+        <h2>Method 5: Animated plus icon</h2>
+        <div class="icon-container">
+            <div class="plus-icon-5"></div>
+            <span>Purple animated plus icon (hover to see effect)</span>
+        </div>
+        <div class="code-block">
+.plus-icon-5 {
+    width: 40px;
+    height: 40px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plus-icon-5:hover {
+    transform: scale(1.1);
+    background-color: #5a32a3;
+}
+
+.plus-icon-5::before,
+.plus-icon-5::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.plus-icon-5::before {
+    width: 20px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus-icon-5::after {
+    width: 3px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+        </div>
+    </div>
+    
+    <div class="example">
+        <h2>Quick Summary</h2>
+        <p><strong>Key CSS properties used:</strong></p>
+        <ul>
+            <li><code>position: relative</code> - for positioning context</li>
+            <li><code>::before</code> and <code>::after</code> - pseudo-elements for the lines</li>
+            <li><code>content: ''</code> - required for pseudo-elements</li>
+            <li><code>position: absolute</code> - for precise positioning</li>
+            <li><code>transform: translate(-50%, -50%)</code> - to center the lines</li>
+            <li><code>top: 50%</code> and <code>left: 50%</code> - for centering</li>
+        </ul>
+    </div>
+</body>
+</html> 

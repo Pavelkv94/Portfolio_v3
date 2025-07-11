@@ -8,17 +8,17 @@ const GreatRow = () => {
     {
       icon: earthIcon,
       title: "Web Development",
-      description: "Creating responsive and interactive web applications using React and Node.js.",
+      description: "Building fast, scalable apps with React, Next.js, NestJS & TypeScript.",
     },
     {
       icon: apiIcon,
       title: "API Integration",
-      description: "Developing and integrating RESTful API to ensure communication between client and server.",
+      description: "Connecting apps to external services with reliable, efficient, and secure APIs.",
     },
     {
       icon: dbIcon,
       title: "Database Management",
-      description: "Optimizing and managing databases, including MongoDB and PostgreSQL, to enhance application performance.",
+      description: "Designing efficient, reliable, and scalable data models with SQL and NoSQL databases.",
     },
   ];
 

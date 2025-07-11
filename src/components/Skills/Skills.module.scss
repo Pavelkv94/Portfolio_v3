@@ -4,7 +4,6 @@
 
   .techs {
     width: 1200px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +11,12 @@
 
     img {
       margin: 20px;
+    }
+
+    @media screen and (max-width: 1280px) {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
@@ -27,8 +32,16 @@
       font-size: 20px;
       margin: 5px 0;
     }
+    @media screen and (max-width: 1280px) {
+      margin: 0 20px;
+    }
+
     @media screen and (max-width: 640px) {
       justify-content: center;
+    }
+
+    @media screen and (max-width: 360px) {
+      margin: 0 5px;
     }
 
     .matrixWrapper {
@@ -47,6 +60,12 @@
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
+
+
+    @media screen and (max-width: 1280px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
       }
       &::before {
         position: absolute;
@@ -88,7 +107,10 @@
           display: flex;
           align-items: center;
           margin: 10px 0;
-
+          
+          @media screen and (max-width: 640px) {
+            flex-wrap: wrap;
+          }
           span {
             width: 200px;
           }
@@ -105,6 +127,7 @@
         }
       }
     }
+
   }
 
   h2 {
@@ -123,6 +146,7 @@
     margin: 0 0 0 40px;
     @media screen and (max-width: 640px) {
       -webkit-text-fill-color: #ff447f;
+      font-size: 32px;
     }
   }
 }

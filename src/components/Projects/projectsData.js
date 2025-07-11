@@ -5,7 +5,7 @@ import orcusVideo from "../../assets/projects/orcus.mp4";
 import momeVideo from "../../assets/projects/mome.mp4";
 import familyVideo from "../../assets/projects/family.webm";
 import cryptowaveVideo from "../../assets/projects/cryptowave.mp4";
-// import todoVideo from "../../assets/projects/todo.webm";
+import epicStreamVideo from "../../assets/projects/epicStream.webm";
 
 export const projects = [
   {
@@ -16,6 +16,15 @@ export const projects = [
     linkCode: "https://github.com/Pavelkv94/Cryptowave",
     linkBack: "https://github.com/Pavelkv94/Cryptowave-server",
     preview: cryptowaveVideo,
+  },
+  {
+    title: "EpicStream",
+    description: "A fullstack live streaming web application where users can broadcast and watch live video streams. Built with NestJS and PostgreSQL on the backend, featuring a GraphQL API for efficient data fetching. Integrated with Stripe for secure, seamless payment processing and subscriptions. Designed to be scalable, performant, and easy to use, showcasing a modern web architecture and real-time capabilities.",
+    technologies: ["Next.js", "Tailwind", "Shadcn", "NestJS", "Postgres", "Redis", "Docker", "Stripe", "GraphQL", "WebSocket", "AWS S3"],
+    linkResourse: "https://epicstream.vercel.app/",
+    linkCode: "https://github.com/Pavelkv94/Twich_clone_front",
+    linkBack: "https://github.com/Pavelkv94/Twich_clone_back",
+    preview: epicStreamVideo,
   },
   {
     title: "Momentum",
@@ -38,8 +47,8 @@ export const projects = [
   },
   {
     title: "Social Network",
-    description: "Social network written in React and Typescript. The backend on the NodeJS was also developed.",
-    technologies: ["Typescript", "React/Redux", "WebSocket", "Node JS, Express", "MongoDB"],
+    description: "A modern social networking platform where users can follow others, share posts, comment, and like content. Features a common chat room for real-time communication. Built with React and Redux on the frontend, with an Express backend and Neo4j graph database to model user relationships. Implements WebSocket for real-time updates and chat, and JWT-based authentication for secure user sessions.",
+    technologies: ["Typescript", "React/Redux", "WebSocket", "Node JS, Express", "MongoDB", "Neo4j", "JWT", "AWS S3"],
     linkResourse: "https://pavelkv94.github.io/Dart-net/",
     linkCode: "https://github.com/Pavelkv94/Dart-net",
     linkBack: "https://github.com/Pavelkv94/Dart-server",

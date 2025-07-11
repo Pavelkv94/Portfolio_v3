@@ -1,13 +1,13 @@
 import windows from "../../assets/windows.svg";
 import linux from "../../assets/linux.svg";
-import macos from "../../assets/macos.svg";
+import cursor from "../../assets/cursor.svg";
 import vscode from "../../assets/vscode.svg";
 import js from "../../assets/js.svg";
 import git from "../../assets/git.svg";
 import ts from "../../assets/ts.svg";
 import npm from "../../assets/npm.svg";
 
-export const techs = [linux, windows, macos, vscode, git, npm, js, ts];
+export const techs = [linux, windows, cursor, vscode, git, npm, js, ts];
 
 export const frontendSkills = [
   { title: "React", level: 9 },
@@ -36,13 +36,14 @@ export const backendSkills = [
   { title: "NodeJS", level: 8 },
   { title: "Express", level: 9 },
   { title: "NestJS", level: 8 },
-  { title: "Swagger", level: 9 },
   { title: "PostgreSQL", level: 7 },
   { title: "MongoDB", level: 9 },
+  { title: "Swagger", level: 9 },
   { title: "Redis", level: 7 },
   { title: "GraphQL", level: 7 },
   { title: "Rest-API", level: 8 },
   { title: "WebSocket", level: 8 },
+  { title: "AWS S3", level: 7 },
   { title: "node-telegram-bot-api", level: 8 },
   { title: "Docker", level: 5 },
   { title: "Jest", level: 6 },
@@ -50,5 +51,5 @@ export const backendSkills = [
   { title: "Mongoose", level: 9 },
   { title: "Prisma", level: 8 },
   { title: "TypeORM", level: 8 },
-
+  { title: "Stripe API", level: 7 },
 ];
