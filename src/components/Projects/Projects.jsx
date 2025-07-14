@@ -63,9 +63,11 @@ export const Projects = ({ dark }) => {
                 <p>{projects[currentProjectIndex].description}</p>
               </div>
               <div className={s.projectLinks}>
-                <a href={projects[currentProjectIndex].linkResourse} target={"_blank"} rel="noreferrer">
-                  <button>View</button>
-                </a>
+                {projects[currentProjectIndex].linkResourse && (
+                  <a href={projects[currentProjectIndex].linkResourse} target={"_blank"} rel="noreferrer">
+                    <button>View</button>
+                  </a>
+                )}
                 <a href={projects[currentProjectIndex].linkCode} target={"_blank"} rel="noreferrer">
                   <button>Code Frontend</button>
                 </a>
@@ -104,9 +106,11 @@ export const Projects = ({ dark }) => {
                         Your browser does not support the video tag.
                       </video>
                       <div className={s.mobileProjectLinks}>
-                        <a href={projects[currentProjectIndex].linkResourse} target={"_blank"} rel="noreferrer">
-                          <button>View</button>
-                        </a>
+                        {projects[currentProjectIndex].linkResourse && (
+                          <a href={projects[currentProjectIndex].linkResourse} target={"_blank"} rel="noreferrer">
+                            <button>View</button>
+                          </a>
+                        )}
                         <a href={projects[currentProjectIndex].linkCode} target={"_blank"} rel="noreferrer">
                           <button>Code Frontend</button>
                         </a>

@@ -21,7 +21,7 @@ export const projects = [
     title: "EpicStream",
     description: "A fullstack live streaming web application where users can broadcast and watch live video streams. Built with NestJS and PostgreSQL on the backend, featuring a GraphQL API for efficient data fetching. Integrated with Stripe for secure, seamless payment processing and subscriptions. Designed to be scalable, performant, and easy to use, showcasing a modern web architecture and real-time capabilities.",
     technologies: ["Next.js", "Tailwind", "Shadcn", "NestJS", "Postgres", "Redis", "Docker", "Stripe", "GraphQL", "WebSocket", "AWS S3"],
-    linkResourse: "https://epicstream.vercel.app/",
+    linkResourse: "",
     linkCode: "https://github.com/Pavelkv94/Twich_clone_front",
     linkBack: "https://github.com/Pavelkv94/Twich_clone_back",
     preview: epicStreamVideo,
